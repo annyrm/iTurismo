@@ -10,9 +10,9 @@ import UIKit
 
 class MapCellController: UITableViewCell {
 
-    @IBOutlet weak var mapimage: UIImageView!
+ 
+    @IBOutlet weak var mapNombre: UILabel!
     
-    @IBOutlet weak var maplabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
         </scene>
-        <!--Places Controller-->
+        <!--View Controller Map-->
         <scene sceneID="zfe-ub-Ij0">
             <objects>
-                <viewController id="ibk-zx-IbO" customClass="PlacesController" customModule="appTampico" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ibk-zx-IbO" customClass="ViewControllerMap" customModule="appTampico" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V0M-se-1mP"/>
                         <viewControllerLayoutGuide type="bottom" id="FSv-Eh-Nsr"/>
@@ -73,39 +73,47 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iN5-6C-C6w">
                                 <rect key="frame" x="20" y="38" width="381" height="44"/>
                                 <items>
-                                    <navigationItem title="Lugares por Visitar" id="yLu-Ex-sNP"/>
+                                    <navigationItem title="Lugares por Visitar" id="yLu-Ex-sNP">
+                                        <barButtonItem key="leftBarButtonItem" title="Atrás" id="4D7-q0-fZx">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Ttx-Cq-CTZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZlL-Ce-Lhs">
                                 <rect key="frame" x="20" y="82" width="381" height="461"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="zQl-Ri-Tqg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mapCell" rowHeight="99" id="zQl-Ri-Tqg" customClass="MapCellController" customModule="appTampico" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="381" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zQl-Ri-Tqg" id="4GA-lr-Qox">
                                             <rect key="frame" x="0.0" y="0.0" width="381" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YM-kU-T3T">
-                                                    <rect key="frame" x="24" y="52" width="266" height="25"/>
-                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTf-Ih-Cgi">
-                                                    <rect key="frame" x="19" y="8" width="271" height="31"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiV-T0-ifx">
+                                                    <rect key="frame" x="24" y="16" width="303" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mapNombre" destination="qiV-T0-ifx" id="75C-0I-UDF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ListaSitios" destination="ZlL-Ce-Lhs" id="R0m-Nb-Hcd"/>
+                        <outlet property="listaSitios" destination="ZlL-Ce-Lhs" id="wXv-Z0-eTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2I2-WF-D5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
