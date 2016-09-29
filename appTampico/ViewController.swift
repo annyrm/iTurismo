@@ -63,10 +63,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let row = indexPath.row
         let chosenSegue = menu[row]["segue"]
+
+        performSegueWithIdentifier(chosenSegue!, sender: self)
         
-        if ((chosenSegue == "qrSegue") || (chosenSegue == "mapSegue")) {
-            performSegueWithIdentifier(chosenSegue!, sender: self)
-        }
     }
 
     
