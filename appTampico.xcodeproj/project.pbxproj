@@ -20,7 +20,6 @@
 		8334C22F1D9C6C0F00264F8F /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 8334C22D1D9C6C0F00264F8F /* maps.png */; };
 		8334C2301D9C6C0F00264F8F /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = 8334C22E1D9C6C0F00264F8F /* qr.png */; };
 		8334C2321D9C6FEB00264F8F /* MapCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334C2311D9C6FEB00264F8F /* MapCellController.swift */; };
-		8334C2341D9C706100264F8F /* PlacesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334C2331D9C706100264F8F /* PlacesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		8334C22D1D9C6C0F00264F8F /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maps.png; sourceTree = "<group>"; };
 		8334C22E1D9C6C0F00264F8F /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
 		8334C2311D9C6FEB00264F8F /* MapCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCellController.swift; sourceTree = "<group>"; };
-		8334C2331D9C706100264F8F /* PlacesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +120,6 @@
 				8334C1F81D9C604200264F8F /* appTampico.xcdatamodeld */,
 				8334C22A1D9C685100264F8F /* MenuCellController.swift */,
 				8334C2311D9C6FEB00264F8F /* MapCellController.swift */,
-				8334C2331D9C706100264F8F /* PlacesController.swift */,
 			);
 			path = appTampico;
 			sourceTree = "<group>";
@@ -293,7 +290,6 @@
 				8334C1F41D9C604200264F8F /* ViewController.swift in Sources */,
 				8307749A1D9DB03F00C90A24 /* ViewControllerMap.swift in Sources */,
 				8334C1F21D9C604200264F8F /* AppDelegate.swift in Sources */,
-				8334C2341D9C706100264F8F /* PlacesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

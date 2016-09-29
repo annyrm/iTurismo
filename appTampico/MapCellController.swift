@@ -13,6 +13,7 @@ class MapCellController: UITableViewCell {
  
     @IBOutlet weak var mapNombre: UILabel!
     
+    @IBOutlet weak var mapCiudad: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
