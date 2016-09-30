@@ -20,6 +20,9 @@
 		8334C22F1D9C6C0F00264F8F /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 8334C22D1D9C6C0F00264F8F /* maps.png */; };
 		8334C2301D9C6C0F00264F8F /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = 8334C22E1D9C6C0F00264F8F /* qr.png */; };
 		8334C2321D9C6FEB00264F8F /* MapCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334C2311D9C6FEB00264F8F /* MapCellController.swift */; };
+		8360A8DE1D9E9DDB0096914C /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360A8DD1D9E9DDB0096914C /* MapaViewController.swift */; };
+		8360A8E01D9EA01B0096914C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360A8DF1D9EA01B0096914C /* CoreLocation.framework */; };
+		8360A8E21D9EA0210096914C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360A8E11D9EA0210096914C /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		830774991D9DB03F00C90A24 /* ViewControllerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMap.swift; sourceTree = "<group>"; };
+		830774991D9DB03F00C90A24 /* ViewControllerMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerMap.swift; path = ../ViewControllerMap.swift; sourceTree = "<group>"; };
 		8334C1EE1D9C604200264F8F /* appTampico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appTampico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8334C1F11D9C604200264F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8334C1F31D9C604200264F8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +62,9 @@
 		8334C22D1D9C6C0F00264F8F /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maps.png; sourceTree = "<group>"; };
 		8334C22E1D9C6C0F00264F8F /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
 		8334C2311D9C6FEB00264F8F /* MapCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapCellController.swift; sourceTree = "<group>"; };
+		8360A8DD1D9E9DDB0096914C /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		8360A8DF1D9EA01B0096914C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8360A8E11D9EA0210096914C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8360A8E21D9EA0210096914C /* Social.framework in Frameworks */,
+				8360A8E01D9EA01B0096914C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +97,8 @@
 		8334C1E51D9C604200264F8F = {
 			isa = PBXGroup;
 			children = (
-				830774991D9DB03F00C90A24 /* ViewControllerMap.swift */,
+				8360A8E11D9EA0210096914C /* Social.framework */,
+				8360A8DF1D9EA01B0096914C /* CoreLocation.framework */,
 				8334C1F01D9C604200264F8F /* appTampico */,
 				8334C2081D9C604200264F8F /* appTampicoTests */,
 				8334C2131D9C604300264F8F /* appTampicoUITests */,
@@ -113,6 +122,7 @@
 				8334C22C1D9C6C0F00264F8F /* Imagenes */,
 				8334C1F11D9C604200264F8F /* AppDelegate.swift */,
 				8334C1F31D9C604200264F8F /* ViewController.swift */,
+				830774991D9DB03F00C90A24 /* ViewControllerMap.swift */,
 				8334C1F51D9C604200264F8F /* Main.storyboard */,
 				8334C1FB1D9C604200264F8F /* Assets.xcassets */,
 				8334C1FD1D9C604200264F8F /* LaunchScreen.storyboard */,
@@ -120,6 +130,7 @@
 				8334C1F81D9C604200264F8F /* appTampico.xcdatamodeld */,
 				8334C22A1D9C685100264F8F /* MenuCellController.swift */,
 				8334C2311D9C6FEB00264F8F /* MapCellController.swift */,
+				8360A8DD1D9E9DDB0096914C /* MapaViewController.swift */,
 			);
 			path = appTampico;
 			sourceTree = "<group>";
@@ -288,6 +299,7 @@
 				8334C2321D9C6FEB00264F8F /* MapCellController.swift in Sources */,
 				8334C1FA1D9C604200264F8F /* appTampico.xcdatamodeld in Sources */,
 				8334C1F41D9C604200264F8F /* ViewController.swift in Sources */,
+				8360A8DE1D9E9DDB0096914C /* MapaViewController.swift in Sources */,
 				8307749A1D9DB03F00C90A24 /* ViewControllerMap.swift in Sources */,
 				8334C1F21D9C604200264F8F /* AppDelegate.swift in Sources */,
 			);
