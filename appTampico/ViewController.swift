@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -66,6 +67,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         performSegueWithIdentifier(chosenSegue!, sender: self)
         
+    }
+    
+    @IBAction func shareToFacebook(){
+        var shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        self.presentViewController(shareToFacebook, animated: true, completion: nil)
+    }
+    
+    @IBAction func shareToTwitter(){
+        var shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        self.presentViewController(shareToTwitter, animated: true, completion: nil)
     }
 
     

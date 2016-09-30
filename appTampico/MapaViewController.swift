@@ -35,6 +35,30 @@ class MapaViewController: UIViewController,  MKMapViewDelegate, CLLocationManage
         self.locationManager.startUpdatingLocation()
         
         self.Mapa.showsUserLocation = true
+        
+        var ann = MKPointAnnotation()
+        ann.coordinate = CLLocationCoordinate2DMake(22.2300079, -97.864369)
+        ann.title = "Laguna del Carpintero"
+        ann.subtitle = "Laguna"
+        Mapa.addAnnotation(ann)
+        
+        var ann1 = MKPointAnnotation()
+        ann.coordinate = CLLocationCoordinate2DMake(22.2163108, -97.8596762)
+        ann.title = "Catedral de Tampico"
+        ann.subtitle = "Iglesia"
+        Mapa.addAnnotation(ann1)
+        
+        var ann2 = MKPointAnnotation()
+        ann.coordinate = CLLocationCoordinate2DMake(22.2160132, -97.860481)
+        ann.title = "Palacio Municipal"
+        ann.subtitle = "Biblioteca"
+        Mapa.addAnnotation(ann2)
+        
+        var ann3 = MKPointAnnotation()
+        ann.coordinate = CLLocationCoordinate2DMake(22.213433, -97.859092)
+        ann.title = "Plaza de la Libertad"
+        ann.subtitle = "Parque"
+        Mapa.addAnnotation(ann3)
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,34 +84,12 @@ class MapaViewController: UIViewController,  MKMapViewDelegate, CLLocationManage
         let sMapItem = MKMapItem(placemark: sPlacemark)
         let dMapItem = MKMapItem(placemark: dPlacemark)
         
-        var ann = MKPointAnnotation()
-        ann.coordinate = CLLocationCoordinate2DMake(22.2300079, -97.864369)
-        ann.title = "Laguna del Carpintero"
-        ann.subtitle = "Laguna"
-        Mapa.addAnnotation(ann)
-        
-        var ann1 = MKPointAnnotation()
-        ann.coordinate = CLLocationCoordinate2DMake(22.2163108, -97.8596762)
-        ann.title = "Catedral de Tampico"
-        ann.subtitle = "Iglesia"
-        Mapa.addAnnotation(ann1)
-        
-        var ann2 = MKPointAnnotation()
-        ann.coordinate = CLLocationCoordinate2DMake(22.2160132, -97.860481)
-        ann.title = "Palacio Municipal"
-        ann.subtitle = "Biblioteca"
-        Mapa.addAnnotation(ann2)
-        
-        var ann3 = MKPointAnnotation()
-        ann.coordinate = CLLocationCoordinate2DMake(22.213433, -97.859092)
-        ann.title = "Plaza de la Libertad"
-        ann.subtitle = "Parque"
-        Mapa.addAnnotation(ann3)
+       
         
         let directionRequest = MKDirectionsRequest()
         directionRequest.source = sMapItem
         directionRequest.destination = dMapItem
-        directionRequest.transportType = .Any
+        directionRequest.transportType = .Automobile
         
         let directions = MKDirections(request: directionRequest)
         

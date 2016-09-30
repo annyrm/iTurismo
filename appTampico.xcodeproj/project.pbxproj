@@ -23,6 +23,15 @@
 		8360A8DE1D9E9DDB0096914C /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360A8DD1D9E9DDB0096914C /* MapaViewController.swift */; };
 		8360A8E01D9EA01B0096914C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360A8DF1D9EA01B0096914C /* CoreLocation.framework */; };
 		8360A8E21D9EA0210096914C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360A8E11D9EA0210096914C /* Social.framework */; };
+		8360A8E41D9EB1010096914C /* Map2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360A8E31D9EB1010096914C /* Map2ViewController.swift */; };
+		8360A8E71D9EBD700096914C /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = 8360A8E51D9EBD700096914C /* fb.png */; };
+		8360A8E81D9EBD700096914C /* tw.png in Resources */ = {isa = PBXBuildFile; fileRef = 8360A8E61D9EBD700096914C /* tw.png */; };
+		8360A8EA1D9EBE2C0096914C /* twi.png in Resources */ = {isa = PBXBuildFile; fileRef = 8360A8E91D9EBE2C0096914C /* twi.png */; };
+		8360A8EE1D9EC4390096914C /* StarbucksAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360A8ED1D9EC4390096914C /* StarbucksAnnotation.swift */; };
+		8360A8F01D9ED4BB0096914C /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360A8EF1D9ED4BB0096914C /* AnnotationView.swift */; };
+		8360A8F21D9ED5F00096914C /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360A8F11D9ED5F00096914C /* CustomPointAnnotation.swift */; };
+		8360A8F41D9ED6B50096914C /* pin.svg in Resources */ = {isa = PBXBuildFile; fileRef = 8360A8F31D9ED6B50096914C /* pin.svg */; };
+		8360A8F81D9EF0A90096914C /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360A8F71D9EF0A90096914C /* QRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +74,15 @@
 		8360A8DD1D9E9DDB0096914C /* MapaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		8360A8DF1D9EA01B0096914C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8360A8E11D9EA0210096914C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8360A8E31D9EB1010096914C /* Map2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map2ViewController.swift; sourceTree = "<group>"; };
+		8360A8E51D9EBD700096914C /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		8360A8E61D9EBD700096914C /* tw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tw.png; sourceTree = "<group>"; };
+		8360A8E91D9EBE2C0096914C /* twi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twi.png; sourceTree = "<group>"; };
+		8360A8ED1D9EC4390096914C /* StarbucksAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarbucksAnnotation.swift; sourceTree = "<group>"; };
+		8360A8EF1D9ED4BB0096914C /* AnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		8360A8F11D9ED5F00096914C /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		8360A8F31D9ED6B50096914C /* pin.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = pin.svg; path = ../../../pin.svg; sourceTree = "<group>"; };
+		8360A8F71D9EF0A90096914C /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,9 @@
 		8334C1E51D9C604200264F8F = {
 			isa = PBXGroup;
 			children = (
+				8360A8F11D9ED5F00096914C /* CustomPointAnnotation.swift */,
+				8360A8EF1D9ED4BB0096914C /* AnnotationView.swift */,
+				8360A8ED1D9EC4390096914C /* StarbucksAnnotation.swift */,
 				8360A8E11D9EA0210096914C /* Social.framework */,
 				8360A8DF1D9EA01B0096914C /* CoreLocation.framework */,
 				8334C1F01D9C604200264F8F /* appTampico */,
@@ -131,6 +152,8 @@
 				8334C22A1D9C685100264F8F /* MenuCellController.swift */,
 				8334C2311D9C6FEB00264F8F /* MapCellController.swift */,
 				8360A8DD1D9E9DDB0096914C /* MapaViewController.swift */,
+				8360A8E31D9EB1010096914C /* Map2ViewController.swift */,
+				8360A8F71D9EF0A90096914C /* QRViewController.swift */,
 			);
 			path = appTampico;
 			sourceTree = "<group>";
@@ -156,6 +179,10 @@
 		8334C22C1D9C6C0F00264F8F /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				8360A8E91D9EBE2C0096914C /* twi.png */,
+				8360A8F31D9ED6B50096914C /* pin.svg */,
+				8360A8E51D9EBD700096914C /* fb.png */,
+				8360A8E61D9EBD700096914C /* tw.png */,
 				8334C22D1D9C6C0F00264F8F /* maps.png */,
 				8334C22E1D9C6C0F00264F8F /* qr.png */,
 			);
@@ -230,6 +257,7 @@
 				TargetAttributes = {
 					8334C1ED1D9C604200264F8F = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = BS34284L64;
 					};
 					8334C2041D9C604200264F8F = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -266,11 +294,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8360A8F41D9ED6B50096914C /* pin.svg in Resources */,
 				8334C2301D9C6C0F00264F8F /* qr.png in Resources */,
+				8360A8E81D9EBD700096914C /* tw.png in Resources */,
 				8334C22F1D9C6C0F00264F8F /* maps.png in Resources */,
 				8334C1FF1D9C604200264F8F /* LaunchScreen.storyboard in Resources */,
 				8334C1FC1D9C604200264F8F /* Assets.xcassets in Resources */,
 				8334C1F71D9C604200264F8F /* Main.storyboard in Resources */,
+				8360A8EA1D9EBE2C0096914C /* twi.png in Resources */,
+				8360A8E71D9EBD700096914C /* fb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,11 +329,16 @@
 			files = (
 				8334C22B1D9C685100264F8F /* MenuCellController.swift in Sources */,
 				8334C2321D9C6FEB00264F8F /* MapCellController.swift in Sources */,
+				8360A8E41D9EB1010096914C /* Map2ViewController.swift in Sources */,
 				8334C1FA1D9C604200264F8F /* appTampico.xcdatamodeld in Sources */,
+				8360A8F21D9ED5F00096914C /* CustomPointAnnotation.swift in Sources */,
 				8334C1F41D9C604200264F8F /* ViewController.swift in Sources */,
 				8360A8DE1D9E9DDB0096914C /* MapaViewController.swift in Sources */,
+				8360A8EE1D9EC4390096914C /* StarbucksAnnotation.swift in Sources */,
+				8360A8F01D9ED4BB0096914C /* AnnotationView.swift in Sources */,
 				8307749A1D9DB03F00C90A24 /* ViewControllerMap.swift in Sources */,
 				8334C1F21D9C604200264F8F /* AppDelegate.swift in Sources */,
+				8360A8F81D9EF0A90096914C /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,10 +480,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = appTampico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itesm.appTampico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -454,10 +494,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = appTampico/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itesm.appTampico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -19,7 +19,7 @@ class ViewControllerMap: UIViewController, UITableViewDataSource, UITableViewDel
         super.viewDidLoad()
         listaSitios.delegate = self
         listaSitios.dataSource = self
-        get_json()
+        //get_json()
 
 
         // Do any additional setup after loading the view.
@@ -30,7 +30,7 @@ class ViewControllerMap: UIViewController, UITableViewDataSource, UITableViewDel
         // Dispose of any resources that can be recreated.
     }
     
-    func get_json () {
+    /*func get_json () {
         //var sitiosName = ""
         let urls = "https://semana-i-app.herokuapp.com/api3"
         let url = NSURL(string: urls)
@@ -50,7 +50,7 @@ class ViewControllerMap: UIViewController, UITableViewDataSource, UITableViewDel
         } catch {
             // Handle Error
         }
-    }
+    }*/
     
     override func viewWillAppear(animated: Bool) {
         if (dict.count != 0) {
@@ -59,6 +59,20 @@ class ViewControllerMap: UIViewController, UITableViewDataSource, UITableViewDel
             dict.append(["name":"Plaza de Armas","Ciudad":"Tampico"])
             dict.append(["name":"Laguna del Carpintero","Ciudad":"Tampico"])
             dict.append(["name":"Playa Miramar","Ciudad":"Madero"])
+            dict.append(["name":"Antigua Aduana Marítima","Ciudad":"Tampico"])
+            dict.append(["name":"Plaza de las Artes","Ciudad":"Tampico"])
+            dict.append(["name":"Hotel City Express","Ciudad":"Tampico"])
+            dict.append(["name":"Puente Tampico","Ciudad":"Tampico"])
+            dict.append(["name":"Escolleras","Ciudad":"Madero"])
+            dict.append(["name":"Parque Bicentenario","Ciudad":"Madero"])
+            dict.append(["name":"Tecnológico de Monterrey Campus Tampico","Ciudad":"Altamira"])
+            dict.append(["name":"Hotel Posada de Tampico","Ciudad":"Tampico"])
+            dict.append(["name":"Club Maeva de Tampico","Ciudad":"Madero"])
+            dict.append(["name":"Hotel Camino Real","Ciudad":"Tampico"])
+            dict.append(["name":"Playa de la Libertad","Ciudad":"Tampico"])
+            dict.append(["name":"Playa Tesoro","Ciudad":"Altamira"])
+            dict.append(["name":"Casa Gándara","Ciudad":"Tampico"])
+            dict.append(["name":"Espacio Cultural Metropolitano","Ciudad":"Tampico"])
         }
     }
 
